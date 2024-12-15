@@ -70,6 +70,7 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
+    id: Number(user?.id) || 0,
     firstName: user?.firstName || '',
     lastName: user?.lastName || '',
     email: user?.email || '',

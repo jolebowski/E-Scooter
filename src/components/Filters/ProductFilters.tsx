@@ -81,7 +81,7 @@ const ProductFilters = ({ onFilterChange }: ProductFiltersProps) => {
   };
 
   const handlePriceChange = (min: number, max: number) => {
-    const newFilters = { ...filters, priceRange: [min, max] };
+    const newFilters = { ...filters, priceRange: [min, max] as [number, number] };
     setFilters(newFilters);
     onFilterChange(newFilters);
   };
